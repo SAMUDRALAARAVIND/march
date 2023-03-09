@@ -1,0 +1,45 @@
+File => 
+pdf
+image files(jpeg, jpg, png)
+docx, doc 
+video files(mp4, 3gp, ...)
+
+java code => java file => some_file.java
+c++ code => c++ file => some_file_name.cpp
+
+HTML(markup language which means uses a collection of tags)
+ executed output of a html file can be called as Webpage 
+ file_name.html => html code
+
+CSS(Styling language using which we can style the webpage)
+    file_name.css
+JavaScript
+
+
+VS CODE shortcuts:
+zoom in: ctrl + '+'
+zoom out: ctrl + '-'
+saving a file: ctrl + s
+copy: ctrl + c
+paste: ctrl + v
+undo: ctrl + z
+redo: ctrl + y
+select a line: ctrl + l
+shift + placeholder1 + placeholder2 => will select the entire content betweeen the placeholders 
+to select the entire file: ctrl + a
+multi cursor:{
+    first way : long press alt  + place your cursor,
+    select multi duplicate: ctrl + d
+}
+search something: ctrl + f
+
+
+Absolute path(exact path)
+ we specify the address of the file starting from root folder(directory)
+ C:\Users\Aravind\OneDrive\Desktop\acciojob\march\basics.txt
+
+Relative path: 
+   We can specify a file address relative to another file 
+
+   ./ => current folder 
+   ../ => parent folder
