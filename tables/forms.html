@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- <input type="text" placeholder="Normal Text">
+    <input type="color" >
+    <input type="password" placeholder="Password123" >
+    <input type="date">
+    <input type="time">
+
+    <input type="datetime-local">
+    <input type="url" placeholder="URL" value="https://orange.com">
+    <input type="file" >
+    <input type="number" value="25" placeholder="Number">
+    <input type="checkbox">
+    <input type="radio">
+    <input type="email" placeholder="Email">
+    <input type="hidden" placeholder="Something">
+    <input type="submit" value="Different Text">
+    <input type="file">
+    <input type="text" placeholder="Country Name" value="India"> -->
+
+    <!-- Signup form : 
+        Email 
+        Phone Number
+        Password
+        Username
+        gender
+    -->
+
+    <form>
+        <input type="email" placeholder="Email" name="email" required value="aravind@gmail.com">
+        <input type="number" placeholder="Phone" name="cell">
+        <input type="password" placeholder="Password" name="password">
+        <input type="text" placeholder="Username" name="abcd">
+        <div>
+            <div>
+                <label for="male" >Male</label>
+                <input type="radio" id="male" value="m" name="gender">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" value="f" id="female" name="gender" >
+            </div>
+            <div>
+                <label for="other">Other</label>
+                <input type="radio" value="o" id="other" name="gender">
+            </div>
+        </div>
+        <input type="submit" value="Sign up">
+    </form>
+</body>
+</html>
+<!-- 
+    {
+        username: 'Aravind',
+        gender: 'male' / 'female' / 'other',
+        email: 'abc@gmail.com',
+    }
+    http://127.0.0.1:5500/tables/forms.html?email=samudralaaravind1708%40gmail.com&cell=38939303&password=Amn%24456&uname=Aravind&gender=m
+
+    {
+        email=samudralaaravind1708%40gmail.com
+        cell=38939303
+        password=Amn%24456
+        uname=Aravind
+        gender=m
+    }
+
+    email=&cell=&password=
+
+
+    email=sa961835%40student.nitw.ac.in&cell=&password=&uname=djudu
+
+    http://127.0.0.1:5500/tables/forms.html?email=&cell=&password=&abcd=cjjcjcjc
+ -->
