@@ -1,0 +1,46 @@
+/* #p1{
+    color: blue ;
+}
+#p2 {
+    color: red ;
+}
+.sec1 {
+    color: white ;
+}
+.sec2{
+    color: purple ;
+}
+.abc{
+    background-color: red;
+}
+#aravind{
+    font-size: 40px;
+} */
+/* 
+selectors: 
+
+tagName selector(no prefix)
+id selector (#)
+class selector(.)
+
+diff between id and class : 
+
+id should be unique for a element inside the document
+
+class can be duplicated 
+class can have multiple values as well 
+*/
+
+/* 
+  specificity order  :
+    id > class > tagName
+
+
+  div.test1.test2#test  
+*/
+
+/* p{
+    padding: 20px;
+    border: 30px solid blue ;
+    margin: 40px;
+} */

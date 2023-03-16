@@ -1,0 +1,125 @@
+/* 
+types of selectors : 
+    tagName
+    class(.)
+    id(#)
+
+Complex selectors(using combinators) : 
+    1) space combinator [descendent selector] ( ) 
+    2) child ( > ) 
+    3) Immediate Next Sibling ( + )
+    4) All the next sibling (~)
+
+
+A combinator is a charecter which combines multiple selectors to make one complex selector 
+*/
+
+/* 
+2-10k html elements 
+*/
+/* parent > children { css code } */
+
+/*  */
+
+/* .one ~ .two {
+    color :red ;
+} */
+
+.test { 
+    background-color: blue ;
+    color: white ; 
+    /* 
+    
+    Box model : 
+    1. Content area (width * height)
+    2. Padding 
+    3. Border
+    4. margin 
+
+    content dimensions 
+
+    */
+    width: 200px;
+    height: 200px;
+    /* padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 24px;
+    padding-bottom: 40px; */
+    padding: 10px ; 
+    /* top right bottom left */
+    /* top horizantal bottom */
+    /* vertical horizantal */
+    /* all */
+
+    /* 
+    Border: 
+     1. BorderColor
+     2. BorderWidth(thicknes)
+     3. BorderStyle(
+    */
+    /* border-top-width: 20px;
+    border-top-style: solid;
+    border-top-color: red; */
+    /* border-top:  solid 10px black ; */
+
+    /* border-bottom-color:yellow ;
+    border-bottom-style: solid ;
+    border-bottom-width: 30px; */
+    /* border-bottom: 30px solid yellow ;
+    border-right: 10px solid red ;
+    border-left: 20px solid orange  ; */
+
+    border: 20px solid red ;
+}
+h1{
+    width: 100px;
+    height: 100px ;
+    background-color: yellow ;
+    margin: 10px auto ;
+}
+body {
+    /* margin-top: 0px; 
+    margin-bottom: 0 ;
+    margin-right: 0 ;
+    margin-left: 0; */
+    margin: 0px ;
+}
+
+
+.abc {
+    background-color: green ;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+
+.one {
+    background-color: blue ;
+    margin-bottom: 20px;
+}
+
+.two {
+    background-color: tomato;
+}
+
+.container {
+    background-color: yellow ;
+    width: 200px;
+    height: 200px;
+}
+.item1 {
+    background-color: blue ;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border: 10px solid red ;
+    margin: 10px auto;
+}
+
+* {
+   border: 2px solid red ;
+}
+.test {
+    text-transform: capitalize;
+}

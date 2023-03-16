@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Introduction to CSS</h1>
+    <!-- 
+            CSS: is all about properties and their usage 
+                You need to know properties and their possible values and their usage 
+
+            3 ways of injecting CSS into html :
+
+            {
+                css_property_name: css_property_value;
+                css_prop_name2: css_prop_value2
+            }
+
+            1) Inline styling 
+                style is an HTML attribute/property and the value of this property is is a group of css properties and values
+
+            2) Internal styling 
+                we use style tags to write css code inside 
+                selector {
+                    css_prop1: css_val1;
+                    css_prop2: css_val2; 
+                }
+
+            3) External styling 
+               .css => 
+
+                selector {
+                        css_prop1: css_val1;
+                        css_prop2: css_val2; 
+                    }
+
+            r g b = (0 - 255)
+            rgb(12, 23, 19)
+
+        -->
+    <!-- 
+            Priority order: 
+
+            for an element 
+                color: red (inline)
+                color: blue (internal)
+                color: orange (external)
+         -->
+    <!-- for the below one 
+        classes are two (sec1 , abc) 
+        id(aravind)
+    -->
+
+    <p>Lorem, ipsum.</p>
+    <span>Some more text</span>
+    <div>Lorem, ipsum.</div>
+    <b>Bold text</b>
+    <span>Second span text</span>
+   <i>Italic text</i>
+
+   <!-- 
+    default behaviour of some html elements : 
+      Block Level elements : 
+        all headings (h1, h2 ... h6)
+        p
+        all semantic elements (nav, aside, section, main, footer, header, table etc)
+        div
+
+      Inline elements : 
+        bold(b), em, i, strong, span, input, button , img, iframe, ..
+
+
+        Never ever keeep a  block level element inside an inline element .
+        you can have an inline element inside a block level element .
+
+    -->
+</body>
+</html>
