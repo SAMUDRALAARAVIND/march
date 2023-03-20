@@ -1,0 +1,72 @@
+.grid-container{
+    background-color: black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns:2fr 3fr 1fr;
+    grid-template-rows:1fr 2fr  ;
+    height:  300px;
+    /* 
+    
+        4 cols 
+        800px = width of the container 
+        200px 200px 300px 100px => 2 + 2 + 3 + 1 => 8
+        2fr    2fr   3fr   1fr   => 8parts in 1600 => 1part = 200px 
+
+        400px  400px 600px 200px =>
+    */
+    /* widths of the columns */
+    /* height: 200px; */
+    /*  5 rows  */
+    /* grid-template-rows: 20% 20% auto auto; */
+    /* heights of the rows */
+
+    /* 
+        total width of the container: 
+        500px
+         1      3    1 => 1+3+1 = 5
+        100px 300px 100px
+    */
+    /* 5 fractions => 3 columns
+        1fr 2fr 2fr
+
+        repeat(4, 1fr) => 1fr 1fr 1fr 1fr
+        repeat(3, auto) => auto auto auto
+        repeat(3, 100px) => 100px 100px 100px
+    */
+    /* justify-items:center;
+    align-items: end; */
+    /* row-gap: 20px;
+    column-gap: 10px; */
+    gap: 10px ;
+}
+.grid-item {
+    background-color: blue;
+    margin: 2px;
+    color: white ;
+    padding: 10px;
+}
+
+.item1{ 
+    background-color: tomato;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+
+    grid-column: 1 / 2;
+    /* justify-self: center;
+    align-self: center; */
+}
+
+.item3 {
+    color: black;
+    background-color: yellow ;
+    /* grid-row-start: 1 ;
+    grid-row-end: 3 ;
+
+    grid-column-start: 3 ;
+    grid-column-end: 4; */
+    grid-row : 1 / 3 ;
+    grid-column:  3 / 4;
+
+    /* align-self: center;
+    justify-self: center; */
+}

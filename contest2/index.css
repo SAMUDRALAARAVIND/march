@@ -1,0 +1,127 @@
+/* 
+1.Add font-family 
+2.Figure out sections need to be build individually
+    i. nav section
+    ii. Header section
+    iii. Catogiries cards
+    iv. Footer
+*/
+nav {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+nav > h1{
+    color: white ;
+}
+nav > div {
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+nav  input , nav  button {
+    background-color: rgba(38, 38, 38, 1);
+    padding: 6px 20px;
+    border-radius: 10px;
+}
+nav input {
+    flex-grow: 1;
+    color: rgba(255, 255, 255, 0.2);
+}
+nav button {
+    color: white ;
+}
+.small-img {
+    width: 50px;
+}
+.large-img {
+    width: 150px;
+}
+.header-section {
+    margin: 20px 50px;
+    border-radius: 10px;
+    background-color:  rgba(38, 38, 38, 1);
+    padding: 20px;
+}
+.header-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-left > .item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 5px 0;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+.header-right button {
+    background-color: #FECB03 ;
+    color: black;
+    padding: 10px;
+    align-self: center;
+    border-radius: 20px;
+}
+
+.categories-section{
+    margin: 20px 50px;
+}
+
+.cards-container {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 10px;
+    gap: 10px ;
+}
+.card {
+    width: 30%;
+    border: 2px solid rgba(38, 38, 38, 1) ;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    position:relative;
+    padding-bottom: 60px;
+}
+.card > h3 , .card > p {
+    color :  rgba(255, 255, 255, 0.8);
+}
+.card > p {
+    font-size: 12px;
+}
+.card > button {
+    background-color: #FECB03;
+    color: black;
+    position: absolute;
+    right: 7px;
+    bottom: 4px;
+    padding: 7px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+footer{
+    display: flex;
+    gap: 20px;
+    margin: 50px 50px;
+    justify-content: space-evenly;
+    background-color: rgba(38, 38, 38, 1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+footer> div > a, footer p, footer h2 {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}

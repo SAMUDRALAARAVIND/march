@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <style>
+        /* 
+            selector:pseudo-class {
+                // css code
+            }
+        */
+        .test:hover{
+            color: red; 
+            border: 2px solid blue ;
+        }
+
+        input:focus {
+            background-color: red;
+        }
+
+        .checkbox:checked {
+            width: 20px;
+            height: 20px;
+        }
+
+        input:disabled {
+            border: 2px solid red;
+        }
+        button:disabled {
+            background-color: yellow ;
+        }
+
+        .item {
+            border: 2px solid blue ;
+        }
+        .item::before {
+            content: '';
+            display: block;
+            background-color: purple;
+            width: 50px;
+            height: 10px;
+            border-radius: 10px;
+            color: white ;
+        }
+        .item::after {
+            content: 'XYZ';
+            display: block;
+        }
+        li::marker {
+            content: '';
+        }
+        li::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            bottom: 3px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+        Some text
+    </div>
+    <input type="text">
+    <input type="text" disabled>
+    <input class="checkbox" type="checkbox" name="" id="">
+    <button disabled>Submit</button>
+
+    <section class="item">Some text inside section</section>
+    <ul>
+        <li>
+            Some text
+        </li>
+    </ul>
+
+    <div style="position: relative; border: 2px solid red; display: inline-block;">
+        <video src="./test.mp4" controls ></video>
+        <button style="position: absolute; top: 10px; right: 10px">Click Me</button>
+    </div>
+</body>
+</html>

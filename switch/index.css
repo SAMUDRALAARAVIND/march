@@ -1,0 +1,45 @@
+input {
+    width: 0;
+    height: 0;
+}
+input:checked + label {
+    background-color: green;
+}
+input:checked + label > .circle {
+    right: 0;
+}
+label {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: gray ;
+    position: relative;
+    border-radius: 20px;
+}
+.circle{
+    position:absolute;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    background-color: white;
+    border-radius: 19px;
+    top: 1px;
+    /* left: 1px; */
+}
+.container {
+    background-color: black ;
+    padding: 20px;
+    width: 840px;
+    height: 840px;
+    display: grid;
+    grid-template-columns: repeat(40, 20px);
+    grid-template-rows: repeat(40, 20px);
+    gap: 1px;
+}
+.container > div {
+    background-color: gray;
+    /* gap: px; */
+}
+.container > div:hover{
+    background-color: red;
+}
