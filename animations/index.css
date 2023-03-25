@@ -1,0 +1,134 @@
+/* .test {
+    width: 200px;
+    height: 200px;
+    background-color: blue; */
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear; */
+    /* transition: all 2s linear; */
+    /* 
+    property: all
+    duration: 0s
+    delay: 0s
+    timing-function: linear
+    */
+/* } */
+
+/* .test:hover {
+    background-color: purple;
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+} */
+/* 
+width: 200px;
+*/
+
+/* 
+width: 400px;
+
+
+transition takes 0s by default
+
+t=0 => t = 0.1s
+200     220
+200     220px
+0       0.1px
+*/
+
+
+/* 
+transform: 
+*/
+/* 
+.test{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    transform: rotate(90deg);
+    transition: 4s;
+}
+.test:hover {
+    transform: rotate(90deg) scaleX(2);
+} */
+
+
+/* 
+1. Design the animation 
+2. apply the animation where ever you want
+*/
+/* 
+    Animation => changing of The CSS properties from one set to another set with some duration .
+*/
+
+.test {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    /* animation-name: firstAnimation ;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in; */
+
+    /* animation-direction:alternate-reverse ; */
+    /* animation-delay: 4s; 
+    animation-direction: normal;
+    animation-fill-mode: both; */
+    animation: firstAnimation 4s 1s linear 1 forwards reverse; 
+}
+/* 
+  t=0s (100, 100)
+
+  t=1s(200, 100)
+  
+  t=2s (200, 200)
+*/
+/* 
+    t = 4s
+
+    t=0s (100, 100)(0%)
+
+    t = 0s => t = 1s
+     width: 100 => 200px;
+     height: 100px => 100px
+
+     t=1s (200, 100) ( 50% )
+
+     t=1s => t=2s
+     width: 200px => 200px;
+     height: 100px => 200px
+
+     t=2s (200, 200)(100%) 
+    
+
+*/
+@keyframes firstAnimation {
+   0%{
+    width: 100px;
+    height: 100px; 
+   }
+   50%{
+    width: 200px;
+    height: 100px;
+   }
+   100%{
+     width: 200px;
+     height: 200px;
+   }
+}
+
+/* .container {
+    border: 1px solid red ;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.child {
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue ;
+    transition: 4s;
+}
+.child:hover {
+    transform: scaleX(6) translateX(10px);
+} */

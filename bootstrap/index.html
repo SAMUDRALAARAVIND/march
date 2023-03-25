@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- 
+        Bootstrap :
+
+         
+
+        CSS and JS
+
+        css
+        js
+
+
+        CDN: content delivery network
+     -->
+     <!-- 
+
+        Bootstrap Grid system : 
+          12 column layout
+          We can make it responsive grid.
+      -->
+
+      <div class="device">
+      </div>
+
+
+
+      <div class="container-fluid">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, blanditiis tempore nesciunt harum quia adipisci obcaecati. Dicta, impedit ut. Doloribus in dolorum porro quaerat modi mollitia maxime at accusamus voluptate magni, omnis, dicta esse asperiores dignissimos pariatur enim est a temporibus iste. Eius quisquam voluptates culpa ab vel aliquid consequuntur molestias quam aspernatur iure adipisci, neque quis fugit asperiores veniam at sunt iusto minus tempora pariatur? Velit repellat accusantium maxime similique et, ex eos ad aperiam vitae tempora ipsa libero, illum sequi? Explicabo voluptate aspernatur, facere dolores quae soluta exercitationem dicta veniam dolore quas nobis, dolorum fuga, voluptates aliquid et?</p>
+      </div>
+
+      <div class="container">
+        <div class="row gx-2 gy-2 justify-content-md-between">
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="item"></div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="item"></div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="item"></div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="item"></div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="item"></div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="item"></div>
+            </div>
+        </div>
+      </div>
+
+      <!-- 
+        > sm (3 items in the row) => 4cols each item should take
+        > md (4 items in the row)
+        > lg (6 items in the row) => 3cols out of 12 should be taken by each item
+
+       -->
+
+       <div class="container my-3">
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" placeholder="Username" id="username" readonly>
+                <small class="text-muted">Enter Username</small>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="text" class="form-control" placeholder="Email" id="Email">
+                <small class="text-muted">Enter Email</small>
+            </div>
+            <div class="form-group">
+                <label for="password">password</label>
+                <input type="text" class="form-control" placeholder="password" id="password">
+                <small class="text-muted">Enter Password</small>
+            </div>
+            <div class="form-group">
+                <input class="form-check-input" type="checkbox" name="" id="" disabled>
+                <label for="check">Check the left checkbox</label>
+            </div>
+            <input type="radio" class="form-check-input" >
+
+            <input type="radio" name="" id="">
+
+            <button id="xyz" class="btn btn-primary my-2 w-100">Submit</button>
+        </form>
+       </div>
+
+
+       <div class="container my-5">
+        <form class="row gy-4">
+            <div class="col-sm-6">
+                <input class="form-control" type="text" placeholder="Username">
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-sm-12">
+                <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="col-sm-12">
+                <button class="btn btn-info w-100">Submit</button>
+            </div>
+        </form>
+       </div>
+
+
+       <div class="container">
+         <div class="row">
+            <div class="col-sm-4 col-lg-3">
+                <div class="card my-5 mx-auto">
+                    <img src="../abc.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Card Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, asperiores!</p>
+                        <button class="btn btn-primary w-100">Go somewhere</button>
+                    </div>
+                   </div>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+                <div class="card my-5 mx-auto">
+                    <img src="../abc.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Card Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, asperiores!</p>
+                        <button class="btn btn-primary w-100">Go somewhere</button>
+                    </div>
+                   </div>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+                <div class="card my-5 mx-auto">
+                    <img src="../abc.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Card Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, asperiores!</p>
+                        <button class="btn btn-primary w-100">Go somewhere</button>
+                    </div>
+                   </div>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+                <div class="card my-5 mx-auto">
+                    <img src="../abc.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Card Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, asperiores!</p>
+                        <button class="btn btn-primary w-100">Go somewhere</button>
+                    </div>
+                   </div>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+                <div class="card my-5 mx-auto">
+                    <img src="../abc.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Card Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, asperiores!</p>
+                        <button class="btn btn-primary w-100">Go somewhere</button>
+                    </div>
+                   </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="container my-5">
+        <div class="card">
+            <!-- <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul> -->
+            <ul class="list-group">
+                <li class="list-group-item">First item</li>
+                <li class="list-group-item">Second item</li>
+                <li class="list-group-item">Third item</li>
+            </ul>
+          </div>
+       </div>
+
+
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, corporis.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Carousal -->
+
+    <div id="abc" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#test" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#test" data-bs-slide-to="1"></li>
+            <li data-bs-target="#test" data-bs-slide-to="2"></li>
+            <li data-bs-target="#test" data-bs-slide-to="3"></li>
+          </ol>
+        <div class="carousel-inner my-5" style="height: 200px">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="../abc.jpeg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./one.jpeg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./download.jpeg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./one.jpeg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#abc" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#abc" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+
+
+    <div class="container my-5">
+        <nav class="navbar bg-dark navbar-expand-lg">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="border: 1px solid red">
+               
+                <div style="display: flex; gap: 10px">
+                    <a style="text-decoration: none" class="text-light" href="#">Home</a>
+                    <a style="text-decoration: none" class="text-light"  href="#">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+</body>
+</html>

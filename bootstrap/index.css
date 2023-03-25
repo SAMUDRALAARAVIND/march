@@ -1,0 +1,52 @@
+
+
+/* when screen width: 400px */
+.item {
+    height: 50px;
+    background-color: purple;
+}
+
+.form-group{
+    margin: 5px 0;
+}
+
+.form-control:focus {
+    outline: none !important;
+}
+
+.device::before{
+    content: 'XS' ;
+    font-size: 30px;
+    color: red ;
+}
+
+@media (min-width: 576px ) {
+    .device::before {
+        content: 'SM'
+    }
+}
+
+@media (min-width: 768px) {
+    .device::before {
+        content: 'MD'
+    }
+}
+
+
+@media (min-width: 992px) {
+    .device::before {
+        content: 'LG';
+    }
+}
+
+@media (min-width: 1200px) {
+    .device::before {
+        content: 'XL';
+    }
+}
+
+@media (min-width: 1400px) {
+    .device::before {
+        content: 'XXL';
+    }
+}
