@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    border: none ;
+    margin: 0;
+}
+main{
+    background-color: #FBFBFB;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    box-shadow: 0px 0.1px 3px #686B78;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.left-nav { 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.address-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.address-container > .other-link {
+    font-weight: bolder !important;
+    color: black ;
+}
+.address-container .other-link:hover {
+    color :#FC8018; 
+}
+.left-nav > img {
+    width: 50px;
+}
+.right-nav {
+    width: 40% ;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right-nav > a {
+     display: flex;
+     text-decoration: none ;
+     color: #686B78;
+     gap: 4px;
+}
+.logo {
+    transition: 0.5s;
+}
+.logo:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+}
+.main-container { 
+    margin: 0 100px 10px 100px;
+    padding-top: 40px; 
+}
+.second-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1px solid #686B78; 
+}
+.links-list{
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+.links-list > a {
+    text-decoration: none;
+    color: #686B78 ;
+    font-weight: 400;
+}
+.links-list > a:hover {
+    border-bottom: 1px solid black;
+}
+.cards-container {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card {
+    width: 220px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+.card  img {
+    width: 100%;
+}
+.card h3 {
+    margin: 10px 0 ;
+}
+.card > .description {
+    color :#686B78 ;
+    margin: 10px 0;
+    font-size: 14px;
+}
+.rating-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0 ;
+    border-bottom: 0.2px solid #686B78;
+    font-size: 14px;
+}
+.rating-container > li  {
+    font-weight: 400;
+    color : #686B78 ;
+}
+.rating-container span {
+    color: white ;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #DB7C38;
+    padding:0 4px; 
+    border-radius: 2px;
+}
+
+.rating > .material-icons {
+    font-size: 14px !important ;
+}
+
+.offer-container {
+    color : #8A584B ;
+    display : flex ;
+    align-items: center;
+    padding-top: 10px; 
+    gap: 10px;
+}
+
+.card button {
+    visibility: hidden ;
+    display: block;
+    width: 100%; 
+    padding-top: 10px;
+    margin: 10px auto ;
+    background-color: inherit;
+    color: blue  ;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 0.2px solid #686B78  ;
+}
+
+.card:hover {
+    outline: 0.2px solid #686B78 ;
+    background-color: white;
+}
+.card:hover button {
+    visibility: visible;
+}
+
+.badge-container {
+    position: relative ;
+}
+.badge {
+    position: absolute ;
+    background-color: rgb(57, 60, 65);
+    color: white ;
+    padding: 4px 10px;
+    font-size: 14px;
+    left: -10px;
+}
+.badge-container::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    background-color: rgb(57, 60, 65);
+    position: absolute; 
+    left: -10px;
+    height: 25px;
+    top: 5px;
+    transform: skewY(45deg);
+}
+
+/* Footer styling  */
+
+
+footer {
+    background-color: black;
+    padding: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+.footer-item h3 {
+    color: #686B78 ;
+    font-weight: 900;
+}
+.footer-item {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+.footer-item a {
+    color: white ;
+    text-decoration: none ;
+}
+
+.imgs-container {
+    justify-content: center;
+    gap: 20px;
+}
+.img {
+    width: 200px;
+    border: 2px solid #686B78 ;
+    border-radius: 10px;
+    transition: 2s;
+}
+.img:hover {
+    transform: scale(1.1);
+}
+
+
+/*
+Frontend => finish (javascript, ReactJS)
+DSA => leetcode(200 => 100E, 80M, 20H)
+Arrays, Strings, LinkedList(amazon), 
+
+graphs, dp (Phonepe) 34LPA, 23LPA
+1. oneline test
+2. 
+3. 
+
+GFG => Reading
+
+Build one project ( Frontend, Backend, Fullstack)
+put these two projects in your resume(2days to just make the resume)
+
+*/

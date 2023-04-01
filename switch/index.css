@@ -41,5 +41,5 @@ label {
     /* gap: px; */
 }
 .container > div:hover{
-    background-color: red;
+    background-color: rgb(random(255), random(255), random(255));
 }
